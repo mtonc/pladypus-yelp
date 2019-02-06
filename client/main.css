@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700");
+.home {
+  background-color: #AA3939;
+  height: 100%;
+}
+.home .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+.home .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.home .hero {
+  width: 100%;
+  height: 500px;
+}
+.home .hero .bg-image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 100%;
+  max-height: 100%;
+  background-image: url(images/bar.jpg);
+  background-size: cover;
+  filter: grayscale(100%) brightness(33%) opacity(80%);
+  z-index: 0;
+}
+.home .hero .centered-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.home .hero .centered-div .title, .home .hero .centered-div .tag-line {
+  text-align: center;
+  color: #fff;
+}
+.home .hero .centered-div form {
+  margin-top: 40px;
+  z-index: 1;
+}
+.home .hero .centered-div form input {
+  border-radius: 20px;
+}
+.home .hero .centered-div form input[type=search] {
+  padding-left: 12px;
+  width: 250px;
+}
+.home .hero .centered-div form input[type=submit] {
+  background-color: #AA3939;
+  border: none;
+  color: #fff;
+  width: 100px;
+  margin-left: 20px;
+}
+.home .results-section {
+  background-color: #AA3939;
+}
+.home .business-group {
+  margin-top: 40px;
+}
+.home .business-group .no-results {
+  width: 100%;
+  text-align: center;
+}
+.home .business-group .card-columns {
+  margin-top: 20px;
+}
+.home .business-group .business-card .card-body {
+  background-color: #669999;
+}
+.home .business-group .business-card .card-text, .home .business-group .business-card .card-title {
+  color: #0D4D4D;
+}
+
+.details {
+  background-color: #AA3939;
+  padding: 40px 0 0;
+  height: 100%;
+}
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.details .container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+  height: 100%;
+}
+.details .icon-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.details .loading-icon {
+  -webkit-animation: rotating 1.5s linear infinite;
+  -moz-animation: rotating 1.5s linear infinite;
+  -ms-animation: rotating 1.5s linear infinite;
+  animation: rotating 1.5s linear infinite;
+}
+.details .image-wrap img {
+  height: auto;
+  max-width: 100%;
+  width: 100%;
+}
+.details .header span.category:after {
+  content: ", ";
+  display: inline;
+}
+.details .header span.category:last-of-type:after {
+  content: none;
+  display: inline;
+}
+.details .header .price:after {
+  content: "  |  ";
+  display: inline;
+}
+.details .header .status .open {
+  color: green;
+}
+.details .header .status .closed {
+  color: red;
+}
+.details .header .status:before {
+  content: "  |  ";
+  display: inline;
+}
+.details .map-wrap {
+  max-width: 100%;
+  width: 100%;
+}
+.details .map-wrap img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+.details .carousel-wrap {
+  height: 425px;
+}
+.details .carousel-wrap .slide, .details .carousel-wrap .carousel-inner, .details .carousel-wrap .carousel-item {
+  height: 100%;
+}
+.details .carousel-wrap .carousel-item {
+  background-color: #2a2a2a;
+}
+.details .carousel-wrap img {
+  max-width: 100%;
+  width: auto;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.details .map-wrap, .details .carousel-wrap {
+  margin-top: 30px;
+}
+@media screen and (min-width: 768px) {
+  .details .map-wrap, .details .carousel-wrap {
+    height: 275px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .details .map-wrap, .details .carousel-wrap {
+    height: 370px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .details .map-wrap, .details .carousel-wrap {
+    height: 445px;
+  }
+}
+.details .business-details {
+  background-color: #407F7F;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 20px;
+  margin-top: 20px;
+  padding-bottom: 40px;
+}
+.details .business-details .address {
+  clear: both;
+}
+.details .business-details .address label {
+  float: left;
+}
+.details .business-details .address .address-line {
+  display: block;
+  float: right;
+  clear: right;
+}
+.details .business-details .phone label {
+  float: left;
+}
+.details .business-details .phone .number {
+  float: right;
+}
+.details .business-details .hours {
+  clear: both;
+}
+.details .business-details .hours label {
+  float: left;
+}
+.details .business-details .hours .day {
+  float: right;
+  clear: right;
+  display: block;
+  font-weight: bold;
+}
+.details .business-details .hours .day .time {
+  font-weight: normal;
+}
+.details .business-details .reviews .single-review {
+  background-color: #669999;
+  margin-bottom: 12px;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px 0px #444;
+}
+
+#react-target {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+}
+
+body, div, p, a, span {
+  font-family: "Poppins", sans-serif;
+  font-size: 14pt;
+}
+
+/*# sourceMappingURL=main.css.map */

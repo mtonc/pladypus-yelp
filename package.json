@@ -1,0 +1,35 @@
+{
+  "name": "pladypus-yelp",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.1.5",
+    "bootstrap": "^4.2.1",
+    "coverflow-react": "^0.1.28",
+    "jquery": "^3.3.1",
+    "meteor-node-stubs": "^0.4.1",
+    "moment": "^2.24.0",
+    "popper.js": "^1.14.7",
+    "react": "^16.5.0",
+    "react-background-slideshow": "^1.0.4",
+    "react-bootstrap": "^1.0.0-beta.5",
+    "react-dom": "^16.5.0",
+    "react-router-dom": "^4.3.1",
+    "react-star-rating-component": "^1.4.1",
+    "react-star-rating-input": "^8.0.1",
+    "react-static-google-map": "^0.5.2",
+    "yelp-fusion": "^2.2.1"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.jsx",
+      "server": "server/main.js"
+    },
+    "testModule": "tests/main.js"
+  }
+}

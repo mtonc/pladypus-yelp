@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
+
+#react-target {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+}
+
+body, div, p, a, span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14pt;
+}

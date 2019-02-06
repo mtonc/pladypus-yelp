@@ -1,0 +1,204 @@
+.details {
+    background-color: #AA3939;
+    padding: 40px 0 0;
+    height: 100%;
+    
+    @-webkit-keyframes rotating {
+        from {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        to {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }// webkit-keyframs
+
+    @keyframes rotating {
+        from {
+            -webkit-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -moz-transform:  rotate(0deg);
+            transform: rotate(0deg);
+        }
+        to {
+            -webkit-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            -moz-transform:  rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }// keyframes
+
+    .container-fluid {
+        padding-right: 0;
+        padding-left: 0;
+        height: 100%;
+    } // container-fluid
+
+    .icon-wrap {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%,-50%);
+        -moz-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+    }// icon-wrap
+
+    .loading-icon {
+        -webkit-animation: rotating 1.5s linear infinite;
+        -moz-animation: rotating 1.5s linear infinite;
+        -ms-animation: rotating 1.5s linear infinite;
+        animation: rotating 1.5s linear infinite;
+    }// loading-icon
+
+    .image-wrap {
+        img {
+            height: auto;
+            max-width: 100%;
+            width: 100%;
+        }
+    } //.image-wrap
+
+    .header {
+
+        span.category {
+            &:after {
+                content: ', ';
+                display: inline;
+            }
+
+            &:last-of-type{
+                &:after {
+                    content: none;
+                    display: inline;
+                } // after
+            }// last of type
+        }// .span.category
+
+        .price {
+            &:after {
+                content: "  |  ";
+                display: inline;
+            }
+        }// .price
+
+        .status {
+
+            .open {
+                color:  green;
+            } // open
+
+            .closed {
+                color: red;
+            }// closed
+
+            &:before {
+                content: "  |  ";
+                display: inline;
+            }
+        }// .status
+    }// .header
+
+    .map-wrap {
+        max-width: 100%;
+        width: 100%;
+
+        img {
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+        }// img
+    }// map-wrap
+
+    .carousel-wrap {
+        height: 425px;
+        .slide,  .carousel-inner, .carousel-item{
+            height: 100%;
+        } // slide, .carousel-inner, .carousel- item
+
+        .carousel-item {
+            background-color: #2a2a2a;
+        }// .carousel-item
+
+        img {
+            max-width: 100%;
+            width: auto;
+            height: 100%;
+            display: block;
+            margin: 0 auto;
+        } // img
+    } // .carousel-wrap
+
+    .map-wrap, .carousel-wrap {
+        margin-top: 30px;
+        @media screen and (min-width: 768px) {
+            height: 275px;
+        }
+        @media screen and (min-width: 992px ) {
+            height: 370px;
+        }
+        @media screen and (min-width: 1200px ) {
+            height: 445px;  
+        }
+    }// .map-wrap, .carousel-wrap
+
+    .business-details {
+        background-color: #407F7F;
+        margin-left: 0;
+        margin-right: 0;
+        padding-top: 20px;
+        margin-top: 20px;
+        padding-bottom: 40px;
+
+        .address{
+            clear: both;
+            label {
+                float: left;
+            } // label
+
+            .address-line {
+                display: block;
+                float: right;
+                clear: right;
+            }// saddress-line
+        }// .address
+    
+        .phone {
+            label {
+                float: left;
+            }
+            .number {
+                float: right;
+            } // .number
+        }// .phone
+
+        .hours {
+            clear: both;
+
+            label {
+                float: left;
+            }// label
+
+            .day {
+                float: right;
+                clear: right;
+                display: block;
+                font-weight: bold;
+                .time {
+                    font-weight: normal;
+                }// .time
+            }// .day
+        }// .hours
+
+        .reviews {
+            .single-review {
+                background-color: #669999;
+                margin-bottom: 12px;
+                padding: 8px;
+                border-radius: 8px;
+                box-shadow: 2px 2px 5px 0px  #444;
+            }
+        }
+    }// .business-details
+}// . details
